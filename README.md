@@ -33,7 +33,6 @@ Below, we've provided an outline for your response but feel free to modify it as
 According to MDN, a function in JavaScript is a set of statements that performs a task or calculates a value. It is one of the fundamental building blocks in JavaScript. For a procedure to qualify as a function, it should typically take some input and return an output, exhibiting a clear relationship between the input and output. To utilize a function, it must be defined within the scope from which it is intended to be called.
 
 You can think of a function like a tool you can use to automate a task instead of writing a block of code every time you want to do this task you can call the function to do it, it makes it way easier and faster.
-[Replace with your explanation of the concept with an analogy]
 
 Check out this example:
 
@@ -52,4 +51,4 @@ const loopUpToNum = (num) => {
 };
 ```
 
-[Replace with your explanation of the example and explanation of the syntax]
+This function is created to loop numbers specifically starting from zero up to the specified number (without including it)even if it's a negative number. The parameter we are using is the number that we want to loop until it reaches it. first we use an if to verify if the number is zero or higher, that is to handle the negative numbers, in this case if it's zero or higher we start a for loop, we initialize i at zero to start the loop, then check if i is less to the specified number if it is then increment i by 1 this is gonna go on until it reaches the specified number but will not include it because if i is equal to the number the next line is not gonna execute. Then we have the other if statement to check if the specified number is less than zero that means a negative number, now the process is very much the same we initialize i at 0 then check if i is greater than the specified number 0 is greater than any negative number imagine we want to loop till -5 if we start i at 0, i is greater than -5 then decrement i by 1 using i-- until it reaches -5 just like with the positive number.So now we have a function and if we ever need to loop from 0 to a certain number we just need to call the function (loopUpToNum(num)) instead of writing the whole code.
